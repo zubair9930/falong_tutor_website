@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function () {
   // Mobile Menu
   const toggleButton = document.querySelector(".navbar__mobile-menu-toggle");
@@ -38,12 +39,34 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Navigation Background Scroll
+=======
+// Toggle mobile menu
+
+document.addEventListener("DOMContentLoaded", function () {
+  const togglebutton = document.querySelector(".navbar .mobile-menu-toggle");
+
+  const mobilemenu = document.querySelector(".navbar .mobile-menu-items");
+
+  togglebutton.addEventListener("click", function () {
+    mobilemenu.classList.toggle("active");
+  });
+});
+
+// Change NavBar background Scroll
+
+>>>>>>> af4e431 (follow along tutot website)
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
 
   if (window.scrollY > 0) {
+<<<<<<< HEAD
     navbar.classList.add("navbar--scroll");
   } else {
     navbar.classList.remove("navbar--scroll");
+=======
+    navbar.classList.add("navbar-scroll");
+  } else {
+    navbar.classList.remove("navbar-scroll");
+>>>>>>> af4e431 (follow along tutot website)
   }
 });
